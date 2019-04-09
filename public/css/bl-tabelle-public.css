@@ -4,7 +4,6 @@
  */
  body div.bl-tabelle {
  	width: 100% !important;
- 	padding: 10px !important;
  }
 
 @supports(display: grid) {
