@@ -1,0 +1,43 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ body div.bl-tabelle {
+ 	width: 100% !important;
+ 	padding: 10px !important;
+ }
+
+@supports(display: grid) {
+	body div.bl-tabelle div.bl-tabelle-heading {
+		display: grid !important;
+		grid-template-columns: 1fr 2fr 1fr;
+		background: #eee !important;
+		border-bottom: 1px solid #ccc;
+	}
+
+	body div.bl-tabelle div.bl-tabelle-heading span {
+		place-self: center;
+	}
+}
+
+@supports(display: grid) {
+	body div.bl-tabelle div.bl-tabelle-entries div.bl-tabelle-entry {
+		display: grid !important;
+		grid-template-columns: 1fr 2fr 1fr;
+		padding: 5px 0;
+	}
+
+	body div.bl-tabelle div.bl-tabelle-entries div.bl-tabelle-entry span {
+		justify-self: center;
+	}
+    body div.bl-tabelle div.bl-tabelle-entries div.bl-tabelle-entry div {
+    	display: grid;
+    	grid-template-columns: 1fr 3fr;
+    }
+	body div.bl-tabelle div.bl-tabelle-entries div.bl-tabelle-entry div img {
+		display: inline-block;
+		max-width: 32px;
+		height: 32px;
+		place-self: center;
+	}
+}
